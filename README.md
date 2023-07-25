@@ -1,5 +1,5 @@
 # Title
-[GitHub license](https://img.shields.io/badge/License-MIT-yellow.svg)]
+[GitHub license](https://img.shields.io/badge/License-MIT-yellow.svg)
   
   ##Description
   Descrip
