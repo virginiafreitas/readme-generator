@@ -43,6 +43,12 @@ const questions = [
     choices: ["MIT", "GPL", "Apache License", "BSD", "Mozilla", "GNU", "none"] //find how to build items and colors and name of the license. specific readme syntax. search for readme intructions. 
     },
     {
+    type: 'list',
+    message: 'Provide the color you would like the license badge to be:',
+    name: 'badge',
+    choices: ["Light Grey", "Red", "Blue", "Yellow", "Bright Green"] //find how to build items and colors and name of the license. specific readme syntax. search for readme intructions. 
+    },
+    {
     type: 'input',
     message: 'Provide your Github username:',
     name: 'github',
