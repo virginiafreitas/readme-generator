@@ -21,12 +21,20 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 ${renderLicenseBadge(data.license)}
-  
   ## Description:
   ${data.description}
   
   ## Installation:
   ${data.installation}
+
+  ## Test Instructions:
+  ${data.tests}
+
+  ## Usage:
+  ${data.usage}
+
+  ## Contributing
+  ${data.contributing}
 
   ## Questions:
   - GitHub URL: https://github.com/${data.github}
