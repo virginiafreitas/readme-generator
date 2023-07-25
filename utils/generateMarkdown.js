@@ -22,17 +22,17 @@ function generateMarkdown(data) {
   return `# ${data.title}
 ${renderLicenseBadge(data.license)}
   
-  ## Description
+  ## Description:
   ${data.description}
   
-  ## Installation
+  ## Installation:
   ${data.installation}
 
   ## Questions:
   https://github.com/${data.github}
   ${data.email}
   
-  ##License
+  ## License:
   ${data.license}
 
   ### Table of Content
