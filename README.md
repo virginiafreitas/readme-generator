@@ -1,23 +1,23 @@
-# aa
-[![GitHub License: MIT](https://img.shields.io/badge/License-MIT-Blue.svg)](https://opensource.org/licenses/MIT)
+# as
+[![GitHub License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
   ## Description:
-  aa
+  as
   
   ## Installation:
-  ss
+  as
 
   ## Test Instructions:
-  rr
+  as
 
   ## Usage:
-  dd
+  as
 
   ## Contributing
-  fff
+  as
 
   ## Questions:
-  - GitHub URL: https://github.com/sd
-  - e-mail address: sc
+  - GitHub URL: https://github.com/as
+  - e-mail address: as
 
   ## License:
   The application is covered under the MIT license.

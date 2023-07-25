@@ -46,7 +46,7 @@ const questions = [
     type: 'list',
     message: 'Provide the color you would like the license badge to be:',
     name: 'badge',
-    choices: ["Light Grey", "Red", "Blue", "Yellow", "Bright Green"] //find how to build items and colors and name of the license. specific readme syntax. search for readme intructions. 
+    choices: ["lightgrey", "red", "blue", "yellow", "brightgreen"] //find how to build items and colors and name of the license. specific readme syntax. search for readme intructions. 
     },
     {
     type: 'input',
