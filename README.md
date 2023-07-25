@@ -1,16 +1,16 @@
-# ReadMe Generator
+# MyProject 
 [GitHub license](https://img.shields.io/badge/License-MIT-yellow.svg)
   
   ## Description:
-  Used JS and Nodejs to create a generator of professional Readme files based on user input answers in the terminal.
+  lalala
   
   ## Installation:
-  lalala
+  kakaka
 
   ## Questions:
-  https://github.com/jajajajaja
-  ndfbsicn
-  
+  - GitHub URL: https://github.com/virginiafreitas
+  - e-mail address: virginiacdefreitas@gmail.com
+
   ## License:
   MIT
 

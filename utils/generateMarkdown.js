@@ -29,9 +29,9 @@ ${renderLicenseBadge(data.license)}
   ${data.installation}
 
   ## Questions:
-  https://github.com/${data.github}
-  ${data.email}
-  
+  - GitHub URL: https://github.com/${data.github}
+  - e-mail address: ${data.email}
+
   ## License:
   ${data.license}
 
