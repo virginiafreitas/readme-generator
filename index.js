@@ -1,14 +1,23 @@
+
+//Imported 'inquirer' to interact with the user through the command line by prompting questions and receiving answers.
 const inquirer = require('inquirer');
+//Imported 'fs' to work with the file system, including reading and writing files.
 const fs = require('fs');
+//Defined a constant variable 'filename' that stores the name of the ReadMe file to be created.
 const filename = 'README.md';
+//Imported the 'generateMarkdown' function from the described path.
 const generateMarkdown = require("./utils/generateMarkdown.js")
+//Imported the 'path' module, which helps in handling file or directory paths in a cross-platform manner.
 const path = require('path')
 
-// TODO: Create an array of questions for user input
+//Defined an array 'questions' to collect user input using the inquirer module.
 const questions = [
     {
+    //'input' type means it expects a text-based answer from the user.
     type: 'input',
+    // The message to be displayed to the user when this question is prompted.
     message: 'What is the project title?',
+    // The 'name' property is used to identify this question's answer in the user's response object.
     name: 'title',
     },
     {
@@ -38,15 +47,17 @@ const questions = [
     },
     {
     type: 'list',
+    //'list' type means it will present the user with a set of choices.
     message: 'Provide the license for your application:',
     name: 'license',
-    choices: ["MIT", "GPL", "Apache License", "BSD", "Mozilla", "GNU", "none"] //find how to build items and colors and name of the license. specific readme syntax. search for readme intructions. 
+    //The 'choices' property holds an array of options from which the user can choose.
+    choices: ["MIT", "GPL", "Apache License", "BSD", "Mozilla", "GNU", "none"] 
     },
     {
     type: 'list',
     message: 'Provide the color you would like the license badge to be:',
     name: 'badge',
-    choices: ["lightgrey", "red", "blue", "yellow", "brightgreen"] //find how to build items and colors and name of the license. specific readme syntax. search for readme intructions. 
+    choices: ["lightgrey", "red", "blue", "yellow", "brightgreen"] 
     },
     {
     type: 'input',
@@ -60,28 +71,36 @@ const questions = [
     }
 ];
 
-// TODO: Create a function to write README file
+// Created a function named 'writeToFile' that takes two parameters('fileName' and 'data') to write README file
 function writeToFile(fileName, data) {
-    
+    // The 'fs.writeFileSync()' method is used to synchronously write data to a file on the file system.
+    // The first argument is the file path where the data will be written, using 'path.join()' to ensure platform independence.
+    // 'process.cwd()' returns the current working directory, and 'fileName' is the relative or absolute path to the file where data will be written.
+    // The second argument is the 'data' that will be written to the file.
+    // The function returns the result of 'fs.writeFileSync()'.
 return fs.writeFileSync(path.join(process.cwd(), fileName), data)
 }
 
-// TODO: Create a function to initialize app
-
+// Created the function init which is responsible for initializing the process of generating a README.md file.
 function init(){
+// The 'inquirer.prompt()' method is used to prompt the user with the 'questions' array defined earlier. It returns a Promise that resolves to the user's responses.
 inquirer
   .prompt(questions)
+  // Once the user provides their responses to the prompted questions, the 'then' method of the Promise is executed. The user's responses are available in the 'response' object.
   .then((response) => {
+    // The 'console.log()' method is used here to display the 'response' object, which will show the user's answers to the questions in the terminal.
     console.log(response)
-
+    // The 'generateMarkdown()' function is called, passing the 'response' object as a parameter using the spread operator ('...').
+    // This function takes take the user's responses and generate the content for the README.md file based on the predefined template.
+    // The result of 'generateMarkdown()' is then passed as the 'data' parameter to the 'writeToFile()' function.
+    // The 'writeToFile()' function will write the generated content to the specified 'README.md' file synchronously on the file system. It is called with two arguments:
+    // 1. 'README.md': indicates that the generated content will be written to a file named 'README.md'.
+    // 2. The result of 'generateMarkdown()': the content that will be written to the 'README.md' file.
     writeToFile('README.md', generateMarkdown({...response}))
-    
   });
-
 }
 
-
-// Function call to initialize app
+// Function call to initialize the application
 init();
 
 
