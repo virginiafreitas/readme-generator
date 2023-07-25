@@ -1,17 +1,21 @@
-# Title
-[GitHub license](https://img.shields.io/badge/License-MIT-yellow.svg)
+# ReadMe Generator
+[GitHub license](https://img.shields.io/badge/License-MIT-yellow.svg)]
   
-  ##Description
-  Descrip
+  ## Description
+  Used Javascript and node js to create a generator of professional readme files, based on user input answers in the terminal.
   
-  ##Installation
-  
-  ##Questions:
+  ## Installation
+  use the terminal
+
+  ## Questions:
+
   https://github.com/virginiafreitas
-  virg@gmail.com
+
+
+     vcg@gmail.com
   
   ##License
-
+  MIT
 
   ### Table of Content
   * [Description](#description)

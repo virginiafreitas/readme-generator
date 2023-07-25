@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "none") {
-    return `[GitHub license](https://img.shields.io/badge/License-${license}-yellow.svg)]`
+    return `[GitHub license](https://img.shields.io/badge/License-${license}-yellow.svg)`
   }
 
 return "";
@@ -29,11 +29,8 @@ ${renderLicenseBadge(data.license)}
   ${data.installation}
 
   ## Questions:
-
   https://github.com/${data.github}
-
-
-     ${data.email}
+  ${data.email}
   
   ##License
   ${data.license}
