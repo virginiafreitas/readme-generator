@@ -13,7 +13,6 @@
 
   ### Test Instructions:
   To test the application, simply add, commit and git push the file to the main branch of your directory, and when you navigate to your Github directory the README section will display the newly generated professional readme file.
-  ![screenshot](./assets/images/instructions_video.webm)
 
   ### Contributing
   I have received advice from the UC Berkeley Extension tutors Henry Weigand and Corrado Alfano on pseudocoding, and Sheetal Srikumar on debugging my code. I also reached out to the Mozilla Developer webpage (https://developer.mozilla.org/en-US/) and NPM Docs (https://docs.npmjs.com/) for documentation.
