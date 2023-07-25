@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "none") {
-    return `[GitHub license](https://img.shields.io/badge/License-${license}-yellow.svg)`
+    return `[![GitHub License: ${license}](https://img.shields.io/badge/License-${license}-yellow.svg)](https://opensource.org/licenses/${license})`
   }
 
 return "";
@@ -41,7 +41,7 @@ ${renderLicenseBadge(data.license)}
   - e-mail address: ${data.email}
 
   ## License:
-  ${data.license}
+  The application is covered under the ${data.license} license.
 
   ### Table of Content
   * [Description](#description)

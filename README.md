@@ -3,16 +3,16 @@
   ## Description:
   akaka
   
-  ## Installation:
+  ## Installation Instructions:
   ldldd
 
   ## Test Instructions:
   akdw
 
-  ## Usage:
+  ## Usage Information:
   ajdhjk
 
-  ## Contributing
+  ## Contributions:
   xdjwnd
 
   ## Questions:
